@@ -2,6 +2,7 @@ import { BankApiDbProvider } from '@config/connection/bank-api-db.connection';
 import { configValidationSchema } from '@config/connection/config.schema';
 import { AccountModule } from '@modules/account/account.module';
 import { AuthModule } from '@modules/auth/auth.module';
+import { OperationModule } from '@modules/operation/operation.module';
 import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 
@@ -14,6 +15,7 @@ import { ConfigModule } from '@nestjs/config';
     ...BankApiDbProvider,
     AuthModule,
     AccountModule,
+    OperationModule,
   ],
   controllers: [],
   providers: [],
