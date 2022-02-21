@@ -7,7 +7,7 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
 import { AccountRepository } from '@modules/account/repositories/account.repository';
 import { AuthSignUpService } from './services/sign-up-auth.service';
 import { AuthSignInService } from './services/sign-in-auth.service';
-import { AuthController } from './controller/auth.controller';
+import { AuthController } from './controllers/auth.controller';
 
 @Module({
   imports: [
