@@ -14,6 +14,9 @@ export class Account {
   @Column()
   name: string;
 
+  @Column({ type: 'float', default: null })
+  balance: number;
+
   @Column({ unique: true })
   cpf: string;
 
