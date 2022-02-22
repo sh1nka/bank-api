@@ -1,15 +1,14 @@
-import * as bcrypt from 'bcrypt';
-import { JwtPayload } from '../dto/jwt-payload.interface';
-import { JwtService } from '@nestjs/jwt';
+import { INCORRECT_CREDENTIALS } from '@common/messages';
+import { AccountRepository } from '@modules/account/repositories/account.repository';
 import {
   BadRequestException,
   Injectable,
-  InternalServerErrorException,
   UnauthorizedException,
 } from '@nestjs/common';
-import { AccountRepository } from '@modules/account/repositories/account.repository';
+import { JwtService } from '@nestjs/jwt';
+import * as bcrypt from 'bcrypt';
 import { AuthCredentialsDto } from '../dto/auth-credentials.dto';
-import { INCORRECT_CREDENTIALS } from '@common/messages';
+import { JwtPayload } from '../dto/jwt-payload.interface';
 
 @Injectable()
 export class AuthSignInService {
