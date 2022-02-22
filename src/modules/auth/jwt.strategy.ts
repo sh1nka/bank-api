@@ -31,7 +31,6 @@ export class JwtStrategy extends PassportStrategy(Strategy) {
       if (!account) {
         throw new UnauthorizedException(INCORRECT_CREDENTIALS);
       }
-      console.log('validou');
       return account;
     } catch (error) {
       throw new InternalServerErrorException();
