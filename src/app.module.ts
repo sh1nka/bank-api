@@ -1,4 +1,4 @@
-import { BankApiDbProvider } from '@config/connection/bank-api-db.connection';
+import { BankApiDbProvider } from '@config/connection/bank-api-db.provider';
 import { configValidationSchema } from '@config/connection/config.schema';
 import { AccountModule } from '@modules/account/account.module';
 import { AuthModule } from '@modules/auth/auth.module';
