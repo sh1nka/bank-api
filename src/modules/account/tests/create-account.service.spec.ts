@@ -61,7 +61,6 @@ describe('Account Services Unit Tests', () => {
       phone: '11999999999',
       email: 'thomas.shinkarenko@gmail.com',
     };
-    console.log(data);
     const spyCreateAccountService = jest.spyOn(
       createAccountService,
       'createAccount',
@@ -73,8 +72,7 @@ describe('Account Services Unit Tests', () => {
     );
     const spyRepositorySaveAccount = jest.spyOn(repository, 'saveAccount');
 
-    const createdAccount = await createAccountService.createAccount(data);
-    console.log('opa', createdAccount);
+    await createAccountService.createAccount(data);
     expect(spyCreateAccountService).toBeCalledTimes(1);
     expect(spyRepositoryFindAccountCpf).toBeCalledTimes(1);
     expect(spyAuthSignUpService).toBeCalledTimes(1);
