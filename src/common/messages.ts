@@ -7,3 +7,5 @@ export const VALUE_MAX_DEPOSIT_LIMIT =
   'O valor excede o limite de depósito (R$ 2000,00)';
 export const VALUE_MAX_TRANSFER_LIMIT =
   'O valor excede o limite de transferência (R$ 2000,00)';
+export const TRANSFER_SAME_ACCOUNT =
+  'Não é possível transferir para sua própria conta';
