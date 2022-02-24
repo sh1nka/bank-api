@@ -21,7 +21,9 @@
       "@modules/*": ["src/modules/*"],
       "@providers/*": ["src/providers/*"],
       "@common/*": ["src/common/*"],
-      "@config/*": ["src/config/*"]
+      "@config/*": ["src/config/*"],
+      "@decorators/*": ["src/decorators/*"],
+      "@test/*": ["test/*"]
     }
   }
 }
