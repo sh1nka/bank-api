@@ -6,11 +6,11 @@ import { UpdateBalanceDto } from '../dto/update-balance.dto';
 @EntityRepository(Account)
 export class AccountRepository extends Repository<Account> {
   async saveAccount(body: CreateAccountDto): Promise<void> {
-    await this.save(body);
+    this.save(body);
   }
 
   async updateBalance(data: UpdateBalanceDto): Promise<void> {
-    await this.createQueryBuilder()
+    this.createQueryBuilder()
       .update(Account)
       .set({ balance: data.balance })
       .where({ id: data.id })
@@ -34,7 +34,7 @@ export class AccountRepository extends Repository<Account> {
   }
 
   async findAccountByCpf(cpf: string): Promise<Account> {
-    return await this.findOne({ cpf });
+    return this.findOne({ cpf });
   }
 
   async findHashedPasswordByCpf(cpf: string): Promise<string> {
