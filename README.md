@@ -5,6 +5,7 @@
 - [TypeScript](https://www.typescriptlang.org/)
 - [Jest](https://jestjs.io/)
 - [Docker](https://www.docker.com/)
+- [MySQL](https://www.mysql.com/)
 
 ## Iniciando o projeto
 
