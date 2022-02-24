@@ -35,8 +35,9 @@ $ yarn test nome-do-teste
 ```
 
 Testes disponíveis:
-create-account
-sign-up-auth
-sign-in-auth
-deposit-operation
-transfer-operation
+
+- create-account
+- sign-up-auth
+- sign-in-auth
+- deposit-operation
+- transfer-operation
