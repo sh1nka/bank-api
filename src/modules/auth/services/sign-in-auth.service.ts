@@ -32,7 +32,7 @@ export class AuthSignInService {
 
       if (await bcrypt.compare(password, hashedPassword)) {
         const payload: JwtPayload = { cpf };
-        const token: string = await this.jwtService.sign(payload);
+        const token: string = this.jwtService.sign(payload);
         return { token };
       } else {
         throw new UnauthorizedException(INCORRECT_CREDENTIALS);
