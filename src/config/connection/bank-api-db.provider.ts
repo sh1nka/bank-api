@@ -13,7 +13,7 @@ export const BankApiDbProvider = [
       password: config.get('DB_PASS'),
       database: config.get('DB_DATABASE'),
       autoLoadEntities: true,
-      synchronize: true, // set to false when in prod, set to false when migrations working on DEV
+      synchronize: true, // should be false in production
     }),
   }),
 ];
