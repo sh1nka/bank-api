@@ -1,7 +1,7 @@
+import { GetAccount } from '@decorators/get-account-req.decorator';
 import { Account } from '@modules/account/account.entity';
 import { Body, Controller, Param, Post, Put, UseGuards } from '@nestjs/common';
 import { AuthGuard } from '@nestjs/passport';
-import { GetAccount } from 'src/decorators/get-account-req.decorator';
 import { DepositDto } from '../dto/deposit.dto';
 import { TransferDto } from '../dto/transfer.dto';
 import { OperationDepositService } from '../services/deposit-operation.service';
