@@ -1,3 +1,11 @@
+## Tecnologias Utilizadas
+
+- [NestJS](https://nestjs.com/)
+- [TypeORM](https://typeorm.io/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Jest](https://jestjs.io/)
+- [Docker](https://www.docker.com/)
+
 ## Iniciando o projeto
 
 Após clonar o projeto, execute
