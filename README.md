@@ -31,7 +31,7 @@ $ docker-compose up
 $ yarn start:dev
 ```
 
-## Para executar os testes
+## Testes Unitários
 
 > Para executar os testes
 
@@ -56,9 +56,11 @@ $ yarn test nome-do-teste
 ## Rotas
 
 As rotas disponíveis são:
+
 @Post
-bank/api/v1/account/create
-Utilizada para criar uma conta
+
+- bank/api/v1/account/create
+  Utilizada para criar uma conta
 
 @Post
 
