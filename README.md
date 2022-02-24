@@ -54,6 +54,7 @@ $ yarn test nome-do-teste
 - transfer-operation
 
 ## Rotas
+
 Disponibilizo abaixo um arquivo JSON para importar no Insomnia, já com as rotas criadas, o mesmo já se encontra com o token aplicado nas requisições das rotas
 [bank-api.json.zip](https://github.com/sh1nka/bank-api/files/8128990/bank-api.json.zip)
 
@@ -82,4 +83,3 @@ Utilizada para transferir dinheiro para uma conta através de um CPF
 - bank/api/v1/operation/deposit
 
 Utilizada para depositar dinheiro na própria conta
-[bank-api.json.zip](https://github.com/sh1nka/bank-api/files/8128990/bank-api.json.zip)
