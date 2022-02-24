@@ -20,9 +20,7 @@ export class AuthSignInService {
   async signIn(authDto: AuthCredentialsDto): Promise<{ token: string }> {
     try {
       const { cpf, password } = authDto;
-      console.log(authDto);
       const account = await this.accountRepository.findAccountByCpf(cpf);
-      console.log(account);
       if (!account) {
         throw new Error(INCORRECT_CREDENTIALS);
       }
