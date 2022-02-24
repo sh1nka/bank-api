@@ -1,6 +1,7 @@
 import {
   ACCOUNT_NOT_FOUND,
   INSUFFICIENT_BALANCE,
+  TRANSFER_SAME_ACCOUNT,
   VALUE_MAX_TRANSFER_LIMIT,
 } from '@common/messages';
 import { Account } from '@modules/account/account.entity';
@@ -35,6 +36,12 @@ export class OperationTransferService {
 
       if (limitValue) {
         throw new Error(VALUE_MAX_TRANSFER_LIMIT);
+      }
+
+      const isSameAccount = account.cpf === receiverAccount.cpf;
+
+      if (isSameAccount) {
+        throw new BadRequestException(TRANSFER_SAME_ACCOUNT);
       }
 
       const newAccountBalance = account.balance - value;
