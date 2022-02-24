@@ -60,19 +60,23 @@ As rotas disponíveis são:
 @Post
 
 - bank/api/v1/account/create
-  Utilizada para criar uma conta
+
+Utilizada para criar uma conta
 
 @Post
 
 - bank/api/v1/login
-  Utilizada para login
+
+Utilizada para login
 
 @Put
 
 - bank/api/v1/operation/transfer/:cpf
-  Utilizada para transferir dinheiro para uma conta através de um CPF
+
+Utilizada para transferir dinheiro para uma conta através de um CPF
 
 @Post
 
 - bank/api/v1/operation/deposit
-  Utilizada para depositar dinheiro na própria conta
+
+Utilizada para depositar dinheiro na própria conta
