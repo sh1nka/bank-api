@@ -60,7 +60,6 @@ describe('Sign In Auth Service Unit Tests', () => {
     );
 
     const token = await service.signIn(data);
-    console.log(token);
     expect(spySignInService).toHaveBeenCalledTimes(1);
     expect(spyRepositoryFindAccountByCpf).toHaveBeenCalledTimes(1);
     expect(token).toBeDefined();
