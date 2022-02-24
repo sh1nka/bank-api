@@ -34,7 +34,6 @@ export class AccountRepository extends Repository<Account> {
   }
 
   async findAccountByCpf(cpf: string): Promise<Account> {
-    console.log('cpfrepo', cpf);
     return await this.findOne({ cpf });
   }
 
@@ -43,7 +42,6 @@ export class AccountRepository extends Repository<Account> {
       .select('password')
       .where('cpf = :cpf', { cpf })
       .getRawOne();
-    console.log('password', password);
     return password;
   }
 }
