@@ -1,4 +1,9 @@
+import { IsNotEmpty } from 'class-validator';
+
 export class UpdateBalanceDto {
-  id?: number;
+  @IsNotEmpty()
+  id: number;
+
+  @IsNotEmpty()
   balance: number;
 }
