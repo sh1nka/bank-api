@@ -31,6 +31,8 @@ $ docker-compose up
 $ yarn start:dev
 ```
 
+## Para executar os testes
+
 > Para executar os testes
 
 ```bash
@@ -43,10 +45,32 @@ $ yarn test
 $ yarn test nome-do-teste
 ```
 
-Testes disponíveis:
+### Testes disponíveis:
 
 - create-account
 - sign-up-auth
 - sign-in-auth
 - deposit-operation
 - transfer-operation
+
+## Rotas
+
+As rotas disponíveis são:
+@Post
+bank/api/v1/account/create
+Utilizada para criar uma conta
+
+@Post
+
+- bank/api/v1/login
+  Utilizada para login
+
+@Put
+
+- bank/api/v1/operation/transfer/:cpf
+  Utilizada para transferir dinheiro para uma conta através de um CPF
+
+@Post
+
+- bank/api/v1/operation/deposit
+  Utilizada para depositar dinheiro na própria conta
