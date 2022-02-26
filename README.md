@@ -60,9 +60,11 @@ main - Arquivo de inicialização do projeto
 
 ### Services
 
-- AccountService
-- AuthService
-- OperationService
+- CreateAccountService - Service responsável pela criação de contas
+- SignUpService - Service responsável por criptografar e salvar a senha
+- SignInService - Service responsável pela autenticação do usuário
+- DepositOperationService - Service responsável pela operação de depósito
+- TransferOperationService - Service responsável pela operação de transferência
 
 **A responsabilidade do Service é lidar com a regra de negócio, lidando com erros, validações e chamando funções do repositório**
 
