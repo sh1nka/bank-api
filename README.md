@@ -44,6 +44,34 @@ app.module.ts - Arquivo de configuração do projeto
 main - Arquivo de inicialização do projeto
 </pre>
 
+### Modules
+
+- Account - Módulo responsável pelas contas
+- Auth - Módulo responsável pela autenticação
+- Operation - Módulo responsável pelas operações
+
+### Controllers
+
+- AccountController
+- AuthController
+- OperationController
+
+* A responsabilidade do Controller é apenas receber as requisições e chamar os services, aqui não são realizadas regras de négocio
+
+### Services
+
+- AccountService
+- AuthService
+- OperationService
+
+* A responsabilidade do Service é lidar com a regra de negócio, lidando com erros, validações e chamando funções do repositório
+
+### Repositories
+
+- AccountRepository
+
+* A responsabilidade do repositório é apenas interagir com o banco, aqui não são realizadas regras de negócio nem validações
+
 ## Dependências necessárias
 
 - [NodeJS](https://nodejs.org/) - Versão 16.10.0
