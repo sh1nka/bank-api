@@ -20,6 +20,7 @@ Através das operações, o usuário:
 ## Arquitetura
 
 <pre>
+└── /init
 └── /src
     ├── /common
     ├── /config
@@ -31,7 +32,9 @@ Através das operações, o usuário:
     ├── factories
 </pre>
 
-<pre>/common - Arquivos de uso compartilhado no projeto
+<pre>
+/init - Diretório que contém scripts sql utilizados pelo Docker
+/common - Arquivos de uso compartilhado no projeto
 /config - Arquivos de configuração do projeto
 /decorators - Decorators customizados
 /modules - Módulos do projeto
