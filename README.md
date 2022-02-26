@@ -8,6 +8,15 @@ Através das operações, o usuário:
 - Não pode transferir para a sua própria conta.
 - Transferir sem taxas e sem limites
 
+## Tecnologias Utilizadas
+
+- [NestJS](https://nestjs.com/)
+- [TypeORM](https://typeorm.io/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Jest](https://jestjs.io/)
+- [Docker](https://www.docker.com/)
+- [MySQL](https://www.mysql.com/)
+
 ## Arquitetura
 
 <pre>
@@ -31,15 +40,6 @@ Através das operações, o usuário:
 app.module.ts - Arquivo de configuração do projeto
 main - Arquivo de inicialização do projeto
 </pre>
-
-## Tecnologias Utilizadas
-
-- [NestJS](https://nestjs.com/)
-- [TypeORM](https://typeorm.io/)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Jest](https://jestjs.io/)
-- [Docker](https://www.docker.com/)
-- [MySQL](https://www.mysql.com/)
 
 ## Dependências necessárias
 
@@ -130,7 +130,7 @@ Campos opcionais:
 
 - localhost:3000/bank/api/v1/login
 
-Utilizada para login
+Body da requisição utilizada para login
 
 ```json
 {
@@ -143,7 +143,7 @@ Utilizada para login
 
 - localhost:3000/bank/api/v1/operation/transfer/:cpf
 
-Utilizada para transferir dinheiro para uma conta através de um CPF
+Body da requisição utilizada para transferir dinheiro para uma conta através de um CPF
 
 ```json
 {
@@ -157,7 +157,7 @@ Obs: O valor deve ser maior que 0, e menor que 2000.
 
 - localhost:3000/bank/api/v1/operation/deposit
 
-Utilizada para depositar dinheiro na própria conta
+Body da requisição utilizada para depositar dinheiro na própria conta
 
 ```json
 {
