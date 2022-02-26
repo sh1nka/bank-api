@@ -10,7 +10,7 @@ Através das operações, o usuário:
 
 ## Arquitetura
 
-<code>
+<pre>
 └── /src
     ├── /common
     ├── /config
@@ -20,7 +20,7 @@ Através das operações, o usuário:
     ├── main.ts
 └── /test
     ├── factories
-</code>
+</pre>
 
 ## Tecnologias Utilizadas
 
