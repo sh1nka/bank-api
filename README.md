@@ -8,6 +8,20 @@ Através das operações, o usuário:
 - Não pode transferir para a sua própria conta.
 - Transferir sem taxas e sem limites
 
+## Arquitetura
+
+<code>
+└── /src
+    ├── /common
+    ├── /config
+    ├── /decorators
+    ├── /modules
+    └── app.module.ts
+    ├── main.ts
+└── /test
+    ├── factories
+</code>
+
 ## Tecnologias Utilizadas
 
 - [NestJS](https://nestjs.com/)
