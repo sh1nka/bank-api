@@ -140,26 +140,51 @@ Utilizada para depositar dinheiro na própria conta
 }
 ```
 
+Obs: O valor deve ser maior que 0, e menor que 2000.
+
 ## Possíveis problemas
 
 Dependendo da versão do utilizada do Docker-Compose, é possível que o mesmo não consiga executar o arquivo com as especificidades necessárias de acordo com o novo formato do [Docker-Compose File](https://docs.docker.com/compose/compose-file/)
 Caso isso ocorra, execute os seguintes comandos:
 
 Criar um novo container
+
+```bash
 docker run --name mysql5.7-33900 -e MYSQL_ROOT_PASSWORD=root -p 33900:3306 -d mysql:5.7
+```
 
 Iniciar o container
+
+```bash
 docker start mysql5.7-33900
+```
 
 Acessar a linha de comando dentro do container
+
+```bash
 docker exec -it mysql5.7-33900 /bin/bash
+```
 
 Acessar o MySQL
+
+```bash
 mysql -uroot -p
+```
+
 Obs: será pedido uma senha, a mesma é: root
 
 Criar os bancos necessários para o projeto (execute um por vez)
-create database bank_api;
-create database bank_api_test;
 
-Após isso, execute yarn start:dev
+```bash
+create database bank_api;
+```
+
+```bash
+create database bank_api_test;
+```
+
+Após isso, execute
+
+```bash
+yarn start:dev
+```
