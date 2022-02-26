@@ -22,14 +22,15 @@ Através das operações, o usuário:
     ├── factories
 </pre>
 
-> /common - Arquivos de uso compartilhado no projeto
-> /config - Arquivos de configuração do projeto
-> /decorators - Decorators customizados
-> /modules - Módulos do projeto
-> /test - Diretório referente à testes
-> /test/factories - Diretório referente a funções que geram dados por demanda para testes
-> app.module.ts - Arquivo de configuração do projeto
-> main - Arquivo de inicialização do projeto
+<pre>/common - Arquivos de uso compartilhado no projeto
+/config - Arquivos de configuração do projeto
+/decorators - Decorators customizados
+/modules - Módulos do projeto
+/test - Diretório referente à testes
+/test/factories - Diretório referente a funções que geram dados por demanda para testes
+app.module.ts - Arquivo de configuração do projeto
+main - Arquivo de inicialização do projeto
+</pre>
 
 ## Tecnologias Utilizadas
 
