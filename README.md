@@ -1,6 +1,11 @@
 ## Sobre
 
 O projeto visa a disponibilizar determinadas rotas para que seja possível depositar e transferir valores entre contas. Para isso, é necessário que uma conta seja criada a partir de um nome e um cpf acompanhados de uma senha - na qual será necessaria uma autenticação para que seja possivel realizar as operações. É possível criar apenas uma conta por CPF.
+Através das operações, o usuário:
+
+- Pode depositar valores em sua conta, desde que seja maior que 0 e menor que 2000.
+- Pode transferir valores para outras contas, desde que seja maior que 0 e menor que 2000.
+- Não pode transferir para a sua própria conta.
 
 ## Tecnologias Utilizadas
 
@@ -135,4 +140,26 @@ Utilizada para depositar dinheiro na própria conta
 }
 ```
 
-Obs: O valor deve ser maior que 0, e menor que 2000.
+## Possíveis problemas
+
+Dependendo da versão do utilizada do Docker-Compose, é possível que o mesmo não consiga executar o arquivo com as especificidades necessárias de acordo com o novo formato do [Docker-Compose File](https://docs.docker.com/compose/compose-file/)
+Caso isso ocorra, execute os seguintes comandos:
+
+Criar um novo container
+docker run --name mysql5.7-33900 -e MYSQL_ROOT_PASSWORD=root -p 33900:3306 -d mysql:5.7
+
+Iniciar o container
+docker start mysql5.7-33900
+
+Acessar a linha de comando dentro do container
+docker exec -it mysql5.7-33900 /bin/bash
+
+Acessar o MySQL
+mysql -uroot -p
+Obs: será pedido uma senha, a mesma é: root
+
+Criar os bancos necessários para o projeto (execute um por vez)
+create database bank_api;
+create database bank_api_test;
+
+Após isso, execute yarn start:dev
