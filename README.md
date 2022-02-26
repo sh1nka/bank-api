@@ -56,7 +56,7 @@ main - Arquivo de inicialização do projeto
 - AuthController
 - OperationController
 
-* A responsabilidade do Controller é apenas receber as requisições e chamar os services, aqui não são realizadas regras de négocio
+**A responsabilidade do Controller é apenas receber as requisições e chamar os services, aqui não são realizadas regras de négocio**
 
 ### Services
 
@@ -64,13 +64,13 @@ main - Arquivo de inicialização do projeto
 - AuthService
 - OperationService
 
-* A responsabilidade do Service é lidar com a regra de negócio, lidando com erros, validações e chamando funções do repositório
+**A responsabilidade do Service é lidar com a regra de negócio, lidando com erros, validações e chamando funções do repositório**
 
 ### Repositories
 
 - AccountRepository
 
-* A responsabilidade do repositório é apenas interagir com o banco, aqui não são realizadas regras de negócio nem validações
+**A responsabilidade do repositório é apenas interagir com o banco, aqui não são realizadas regras de negócio nem validações**
 
 ## Dependências necessárias
 
