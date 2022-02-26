@@ -6,6 +6,7 @@ Através das operações, o usuário:
 - Pode depositar valores em sua conta, desde que seja maior que 0 e menor que 2000.
 - Pode transferir valores para outras contas, desde que seja maior que 0 e menor que 2000.
 - Não pode transferir para a sua própria conta.
+- Transferir sem taxas e sem limites
 
 ## Tecnologias Utilizadas
 
