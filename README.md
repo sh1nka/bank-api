@@ -78,7 +78,7 @@ As rotas disponíveis são:
 
 @Post
 
-- bank/api/v1/account/create
+- localhost:3000/bank/api/v1/account/create
 
 Utilizada para criar uma conta
 
@@ -103,7 +103,7 @@ Campos opcionais:
 
 @Post
 
-- bank/api/v1/login
+- localhost:3000/bank/api/v1/login
 
 Utilizada para login
 
@@ -116,7 +116,7 @@ Utilizada para login
 
 @Put
 
-- bank/api/v1/operation/transfer/:cpf
+- localhost:3000/bank/api/v1/operation/transfer/:cpf
 
 Utilizada para transferir dinheiro para uma conta através de um CPF
 
@@ -130,7 +130,7 @@ Obs: O valor deve ser maior que 0, e menor que 2000.
 
 @Post
 
-- bank/api/v1/operation/deposit
+- localhost:3000/bank/api/v1/operation/deposit
 
 Utilizada para depositar dinheiro na própria conta
 
